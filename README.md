@@ -12,7 +12,7 @@ Problemas Estruturados em Computação do curso de Engenharia de Software da PUC
 1) AFI5: Implementar método recursivo para a potência de um número x elevado a y (power).
 2) AFI5: Implementar método recursivo para obter determinado número na sequência de Fibonacci.
 3) AFI5: Implemente um algoritmo para encontrar o maior elemento em um array.
-6) AFI5: Implemente um algoritmo para encontrar a quantidade de quadrados utilizados no enésimo triângulo.
+4) AFI5: Implemente um algoritmo para encontrar a quantidade de quadrados utilizados no enésimo triângulo.
 
 Para mais detalhes sobre cada exercício acesse o slide da aula.
 
