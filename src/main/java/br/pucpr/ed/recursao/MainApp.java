@@ -5,9 +5,17 @@ import java.io.File;
 public class MainApp {
 
     public static void main(String[] args) {
-        System.out.println("5! = " + OperacaoMatematica.fatorial(5));
-        System.out.println("potencia(2,8) = " + OperacaoMatematica.potencia(9, 3));
-        System.out.println("fibonacci(4): " + OperacaoMatematica.fibonacci(4));
+        // Coloque um path válido como parâmetro do construtor
+        File file = new File("/MODIFIQUE/O/PATH/");
+        System.out.println("Tamanho do arquivo ou diretório no path: " + FileUtils.usoEmDisco(file));
+
+        //Fiquem a vontade para mudar o valor das variáveis para testar seus métodos!
+        Integer n = 5;
+        System.out.println(n + "! = " + OperacaoMatematica.fatorial(n));
+        Integer x = 9;
+        Integer y = 3;
+        System.out.printf("potencia(%d,%d) = %d\n", x, y, OperacaoMatematica.potencia(9, 3));
+        System.out.printf("fibonacci(%d) = %d\n", n, OperacaoMatematica.fibonacci(4));
         Integer[] array = {4, 2, 1, 10, 5};
         Integer maiorElemento = ArrayUtils.maiorElementoNoArray(array, array.length);
         System.out.println("Maior elemento no array: " + maiorElemento);
