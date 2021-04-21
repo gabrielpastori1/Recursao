@@ -14,7 +14,8 @@ public class OperacaoMatematica {
 
     // Implementação exercício 1
     public static Integer potencia(Integer x, Integer y){
-        return null;
+        if(y == 0) return 1;
+        return x * potencia(x, y-1);
     }
 
     // Implementação exercício 2
