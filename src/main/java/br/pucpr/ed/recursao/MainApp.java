@@ -3,10 +3,9 @@ package br.pucpr.ed.recursao;
 import java.io.File;
 
 public class MainApp {
-
     public static void main(String[] args) {
         // Coloque um path válido como parâmetro do construtor
-        File file = new File("/MODIFIQUE/O/PATH/");
+        File file = new File("c:");
         System.out.println("Tamanho do arquivo ou diretório no path: " + FileUtils.usoEmDisco(file));
 
         //Fiquem a vontade para mudar o valor das variáveis para testar seus métodos!
@@ -19,5 +18,8 @@ public class MainApp {
         Integer[] array = {4, 2, 1, 10, 5};
         Integer maiorElemento = ArrayUtils.maiorElementoNoArray(array, array.length);
         System.out.println("Maior elemento no array: " + maiorElemento);
+
+        Integer nTriangular = OperacaoMatematica.numeroTriangular(16);
+        System.out.println("Numero triangular: " + nTriangular);
     }
 }

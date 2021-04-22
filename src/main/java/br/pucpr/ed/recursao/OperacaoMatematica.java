@@ -20,11 +20,13 @@ public class OperacaoMatematica {
 
     // Implementação exercício 2
     public static Integer fibonacci(Integer n){
-        return null;
+        if(n==0 || n==1) return 1;
+        return (fibonacci(n-1) + fibonacci(n-2));
     }
 
     // Implementação exercício 4
     public static Integer numeroTriangular(Integer n){
-        return null;
+        if(n == 1) return n;
+        return n + numeroTriangular(n-1);
     }
 }
